@@ -1,3 +1,9 @@
+typedef struct Stats *Stats_ptr;
+struct Stats { 
+	Stats_ptr	average; 
+	Stats_ptr	min; 
+	Stats_ptr	max; 
+};
 
 struct Stats compute_statistics(const float* numberset, int setlength);
 
