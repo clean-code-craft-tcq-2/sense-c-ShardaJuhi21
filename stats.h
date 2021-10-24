@@ -1,8 +1,8 @@
-typedef struct  { 
+typedef struct Stats { 
 	double	average; 
 	double	min; 
 	double	max; 
-}Stats;
+};
 
 struct Stats compute_statistics(const float* numberset, int setlength);
 
