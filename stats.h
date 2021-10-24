@@ -1,4 +1,4 @@
-typedef struct Stats *Stats_ptr;
+typedef struct Stats stats;
 struct Stats { 
 	double	average; 
 	double	min; 
