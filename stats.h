@@ -1,5 +1,4 @@
-typedef struct Stats stats;
-struct Stats { 
+typedef struct Stats { 
 	double	average; 
 	double	min; 
 	double	max; 
