@@ -10,7 +10,7 @@ struct Stats compute_statistics(const float* numberset, int setlength)
 void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats)
 {
     float max = maxThreshold ;
-    alerter_funcptr Array[2] = alerters;
+    alerter_funcptr Array[2] = {alerters[0],alerters[1]};
     stats local = computedStats;
     
 }
