@@ -1,10 +1,13 @@
-#define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
+#define CATCH_CONFIG_MAIN  1 // This tells Catch to provide a main() - only do this in one cpp file
 
 #include "catch.hpp"
 #include "stats.h"
 
 #include <stdlib.h>
 #include <math.h>
+#ifdef NAN
+/* NAN is supported */
+#endif
 
 TEST_CASE("reports average, minimum and maximum") {
     float numberset[] = {1.5, 8.9, 3.2, 4.5};
@@ -21,7 +24,12 @@ TEST_CASE("average is NaN for empty array") {
     //All fields of computedStats (average, max, min) must be
     //NAN (not-a-number), as defined in math.h
     
+    
     //Design the REQUIRE statement here.
+    
+    REQUIRE(isnan(abs(computedStats.average - NAN)));
+    REQUIRE(isnan(abs(computedStats.max - NAN)));
+    REQUIRE(isnan(abs(computedStats.min - NAN)));
     //Use https://stackoverflow.com/questions/1923837/how-to-use-nan-and-inf-in-c
 }
 
