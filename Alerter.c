@@ -1,12 +1,12 @@
 #include "Alerter.h"
 
- alerter_funcptr *emailAlerter()
+ void emailAlerter()
 {
   int emailCount =0;
       emailCount +=1;
   
 }
-alerter_funcptr *ledAlerter()
+void ledAlerter()
 {
     int ledCount =0;
       ledCount +=1;
