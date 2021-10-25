@@ -15,6 +15,6 @@ void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stat
     alerter_funcptr Array[2] = {alerters[0],alerters[1]};
     stats local = computedStats;
   emailAlertCallCount =1;
-  ledAlertCallCount =1   
+  ledAlertCallCount =1 ;  
 }
 
